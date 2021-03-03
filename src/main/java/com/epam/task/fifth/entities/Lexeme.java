@@ -14,11 +14,11 @@ public class Lexeme implements Component{
         this.type=type;
     }
 
-    public Lexeme word(String lexeme){
+    public static Lexeme word(String lexeme){
         return new Lexeme(lexeme,LexemeType.WORD);
     }
 
-    public Lexeme expression(String lexeme){
+    public static Lexeme expression(String lexeme){
         return new Lexeme(lexeme,LexemeType.EXPRESSION);
     }
 
